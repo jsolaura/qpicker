@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fixed.css">
+    <link rel="stylesheet" href="./css/partnership.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/214e267407.js" crossorigin="anonymous"></script>
+    <title>partnership</title>
+</head>
+<body>
+    <div class="side-bar">
+        <span><a href="#" class="insta"><i class="fab fa-instagram"></i></a></span>
+        <span><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></span>
+    </div>
+    <header>
+        <div class="logo"><img src="./img/logo2.png" alt="logo"></div>
+        <ul class="menu">
+            <li><a href="#">about</a></li>
+            <li><a href="#">partnership</a></li>
+            <li><a href="#">event</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="partner-wrap">
+            <ul>
+                <li class="content content1">
+                    <div class="back-content back1">
+                        <h2>픽캐스터</h2>
+                        <span></span>
+                        <p>좋아하는 박물관을 소개하고,<br>나를 브랜드화 해요.</p>
+                        <button class="btn1">자세히 보러가기</button>
+                    </div>
+                </li>
+                <li class="content content2">
+                    <div class="back-content back2">
+                        <h2>뮤지엄</h2>
+                        <span></span>
+                        <p>우리 뮤지엄을<br>가장 쉽고 빠르게 소개해요</p>
+                        <button class="btn2">자세히 보러가기</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrap">
+            <ul>
+                <li>서울특별시 마포구 잔다리로3안길 11 Peopulley(피플리)</li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">Email&nbsp; Mobile@peopulley.com</a></li>
+                <li><a href="#">TEL 02-322-7930</a></li>
+                <li>FAX 02-322-7926</li>
+                <li class="copyright">Copyright © 2019 Peopulley lnc, All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const back = document.querySelectorAll(".back-content");
+        back.forEach((content) => {
+            content.addEventListener("mouseover", () => {
+                content.classList.add("show");
+            })
+            content.addEventListener("mouseout", () => {
+                content.classList.remove("show");
+            })
+        })
+        
+    </script>
+</body>
+</html>
