@@ -29,6 +29,21 @@
         </div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script>
+        const pop = document.querySelector(".pop-up");
+        const mouse = document.querySelector(".mouse-click");
+        const txt = document.querySelector(".contents h2")
+        mouse.addEventListener("mouseover", () => {
+            pop.classList.add("show");
+            txt.classList.add("hide");
+        })
+
+        pop.addEventListener("mouseout", () => {
+            pop.classList.remove("show");
+            txt.classList.remove("hide");
+        })
+
+
+    </script>
 </body>
 </html>
